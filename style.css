@@ -192,9 +192,10 @@ footer p {
     margin-bottom: .5rem;
   }
 
-  .succes {
+  .succes-message {
     position: absolute;
-    bottom: -70%;
+    bottom: -100%;
+    margin-top: 1em;
   }
 
   .error-message {
