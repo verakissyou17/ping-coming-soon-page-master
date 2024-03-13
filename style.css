@@ -194,11 +194,11 @@ footer p {
 
   .succes {
     position: absolute;
-    bottom: -60%;
+    bottom: -70%;
   }
 
   .error-message {
     position: absolute;
-    bottom: -60%; 
+    bottom: -70%; 
   }
 }
