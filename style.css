@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Colors */
+/* Primary */
+--Blue: hsl(223, 87%, 63%);
+/* Secondary */
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+/* Neutral */
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+--Green: hsl(120, 54%, 28%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: "Libre Franklin", sans-serif;
+   font-size: 1,25rem;
+   text-align: center;
+}
+
+img, 
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+h1 {
+  font-size: clamp(1.5rem, 4.1vw, 2.5rem);
+  font-weight: 400;
+  color: var(--Blue);
+  margin-bottom: 1.5rem;
+}
+
+h1 strong {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+header p {
+  font-size: clamp(1rem, 2.3vw, 1.25rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+main {
+  margin-bottom: 8.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+form input {
+  padding: .7em 1.5em;
+  border-radius: 100px;
+  border: 1px solid var(--Pale-Blue);
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+input::placeholder {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--Pale-Blue);
+}
+
+form button {
+  width: 100%;
+  padding: .7em 1.5em;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--Blue);
+  color: white;
+  font-size: .9rem;
+  font-weight: 600;
+  box-shadow: 3px 3px 3px hsla(223, 87%, 63%, 0.349);
+}
+
+form button:hover {
+  opacity: .85;
+}
+
+.email-error {
+  font-family: inherit;
+  border: 1px solid var(--Light-Red);
+  outline: none;
+}
+
+.error-message {
+  color: var(--Light-Red);
+  font-family: inherit;
+  display: block;
+  margin-block: 1em;
+}
+
+.succes-email {
+  font-family: inherit;
+  border: 1px solid var(--Green);
+  outline: none;
+}
+
+.succes-message {
+  color: var(--Green);
+  font-family: inherit;
+  display: block;
+  margin-block: 1em;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.fa-brands {
+  color: var(--Blue);
+  margin-left: 1rem;
+  padding: .5rem;
+  border-radius: 50%;
+  border: 1px solid var(--Pale-Blue);
+  margin-bottom: 1.5rem;
+}
+
+.fa-facebook-f {
+  padding: .5rem .7rem;
+}
+
+.fa-brands:hover {
+  color: white;
+  background-color: var(--Blue);
+  border: none;
+  transform: scale(1.2);
+}
+
+.container {
+  margin: 4em 2em .5em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+footer p {
+  color: var(--Gray);
+}
+
+
+@media (min-width: 700px) {
+  .logo {
+    width: 200px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-inline: auto;
+    margin-bottom: 6rem;
+    position: relative;
+  }
+
+  form button  {
+    width: 35%;
+    margin-left: 5px;
+    margin-bottom: .5rem;
+  }
+
+  .succes {
+    position: absolute;
+    bottom: -60%;
+  }
+
+  .error-message {
+    position: absolute;
+    bottom: -60%; 
+  }
+}

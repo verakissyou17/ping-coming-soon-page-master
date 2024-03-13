@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/958582e863.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <img class="logo" src="./images/logo.svg" alt="An image of the logo of the site">
+      </div>
+      <h1>We are launching <strong>soon!</strong></h1>
+      <p>Subscribe and get notified</p>
+    </header>
+
+    <main>
+        <form id="formControl" action="#">
+          <label for="inputElement"></label>
+          <input aria-label="emailAddress" id="inputElement" type="email" placeholder="Your email address...">
+          <small id="error-message"></small>
+          <button id="submitBtn" type="submit">Notify Me</button>
+        </form>
+        <picture>
+          <source media="(max-width: 600px)" srcset="./images/illustration-dashboard.png">
+          <img src="./images/illustration-dashboard.png" alt="desktop-view-1">
+        </picture>
+    </main>
+
+    <footer>
+      <nav class="row">
+        <a href="#" class="nav__link" title="facebook-icon" aria-label="facebook">
+          <i class="fa-brands fa-facebook-f" aria-hidden="false"></i>
+        </a>
+         <a href="#" class="nav__link" title="twitter-icon" aria-label="twitter">
+          <i class="fa-brands fa-twitter" aria-hidden="false"></i>
+        </a>
+        <a href="#" class="nav__link" title="instagram-icon" aria-label="instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="false"></i>
+        </a>
+      </nav>
+      <p> &copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
