@@ -33,7 +33,6 @@ svg {
   display: block;
 }
 
-
 h1 {
   font-size: clamp(1.5rem, 4.1vw, 2.5rem);
   font-weight: 400;
@@ -47,13 +46,13 @@ h1 strong {
 }
 
 header p {
-  font-size: clamp(1rem, 2.3vw, 1.25rem);
+  font-size: inherit;
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
 main {
-  margin-bottom: 8.5rem;
+  margin-bottom: 5rem;
 }
 
 form {
@@ -65,7 +64,7 @@ form {
 }
 
 form input {
-  padding: .7em 1.5em;
+  padding: 1em 1.5em;
   border-radius: 100px;
   border: 1px solid var(--Pale-Blue);
   width: 100%;
@@ -80,7 +79,7 @@ input::placeholder {
 
 form button {
   width: 100%;
-  padding: .7em 1.5em;
+  padding: 1em 1.5em;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -129,7 +128,7 @@ form button:hover {
   padding: .5rem;
   border-radius: 50%;
   border: 1px solid var(--Pale-Blue);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .fa-facebook-f {
@@ -160,16 +159,13 @@ form button:hover {
   margin-bottom: 2em;
 }
 
-footer p {
+footer small {
   color: var(--Gray);
 }
 
 
 @media (min-width: 700px) {
-  .logo {
-    width: 200px;
-  }
-
+  
   .container {
     width: 100%;
     max-width: 700px;
